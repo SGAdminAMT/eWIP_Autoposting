@@ -1,0 +1,76 @@
+c:\users\pcadmin\documents\visual studio 2017\Projects\AutoPosting\AutoPosting\bin\Debug\AutoPosting.exe.config
+c:\users\pcadmin\documents\visual studio 2017\Projects\AutoPosting\AutoPosting\bin\Debug\AutoPosting.exe
+c:\users\pcadmin\documents\visual studio 2017\Projects\AutoPosting\AutoPosting\bin\Debug\AutoPosting.pdb
+c:\users\pcadmin\documents\visual studio 2017\Projects\AutoPosting\AutoPosting\obj\Debug\AutoPosting.exe
+c:\users\pcadmin\documents\visual studio 2017\Projects\AutoPosting\AutoPosting\obj\Debug\AutoPosting.pdb
+C:\Users\PCAdmin\Documents\Visual Studio 2017\Projects\AutoPosting\AutoPosting\obj\Debug\AutoPosting.csprojResolveAssemblyReference.cache
+D:\AutoPosting\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\AutoPosting\AutoPosting\bin\Debug\AutoPosting.exe
+D:\AutoPosting\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\AutoPosting\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\AutoPosting\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\AutoPosting\AutoPosting\obj\Debug\AutoPosting.exe
+D:\AutoPosting\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\testing\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\testing\AutoPosting\bin\Debug\AutoPosting.exe
+D:\testing\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\testing\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\testing\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\testing\AutoPosting\obj\Debug\AutoPosting.exe
+D:\testing\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\testing2\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\testing2\AutoPosting\bin\Debug\AutoPosting.exe
+D:\testing2\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\testing2\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\testing2\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\testing2\AutoPosting\obj\Debug\AutoPosting.exe
+D:\testing2\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\17_7_2023_live_1\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\17_7_2023_live_1\AutoPosting\bin\Debug\AutoPosting.exe
+D:\17_7_2023_live_1\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\17_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\17_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\17_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.exe
+D:\17_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\18_7_2023_live_1\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\18_7_2023_live_1\AutoPosting\bin\Debug\AutoPosting.exe
+D:\18_7_2023_live_1\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\18_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\18_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\18_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.exe
+D:\18_7_2023_live_1\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\27_7_2023_test\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\27_7_2023_test\AutoPosting\bin\Debug\AutoPosting.exe
+D:\27_7_2023_test\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\27_7_2023_test\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\27_7_2023_test\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\27_7_2023_test\AutoPosting\obj\Debug\AutoPosting.exe
+D:\27_7_2023_test\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\2_8_2023_live\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\2_8_2023_live\AutoPosting\bin\Debug\AutoPosting.exe
+D:\2_8_2023_live\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\2_8_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\2_8_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\2_8_2023_live\AutoPosting\obj\Debug\AutoPosting.exe
+D:\2_8_2023_live\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\30_8_2023_live\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\30_8_2023_live\AutoPosting\bin\Debug\AutoPosting.exe
+D:\30_8_2023_live\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\30_8_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\30_8_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\30_8_2023_live\AutoPosting\obj\Debug\AutoPosting.exe
+D:\30_8_2023_live\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\30_9_2023_live\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\30_9_2023_live\AutoPosting\bin\Debug\AutoPosting.exe
+D:\30_9_2023_live\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\30_9_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\30_9_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\30_9_2023_live\AutoPosting\obj\Debug\AutoPosting.exe
+D:\30_9_2023_live\AutoPosting\obj\Debug\AutoPosting.pdb
+D:\25_10_2023_live\AutoPosting\bin\Debug\AutoPosting.exe.config
+D:\25_10_2023_live\AutoPosting\bin\Debug\AutoPosting.exe
+D:\25_10_2023_live\AutoPosting\bin\Debug\AutoPosting.pdb
+D:\25_10_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.AssemblyReference.cache
+D:\25_10_2023_live\AutoPosting\obj\Debug\AutoPosting.csproj.CoreCompileInputs.cache
+D:\25_10_2023_live\AutoPosting\obj\Debug\AutoPosting.exe
+D:\25_10_2023_live\AutoPosting\obj\Debug\AutoPosting.pdb

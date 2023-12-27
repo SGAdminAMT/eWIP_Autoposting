@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://frontstep.com/IDOWebService" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://frontstep.com/IDOWebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://frontstep.com/IDOWebService">
+      <s:element name="GetConfigurationNames">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetConfigurationNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetConfigurationNamesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateSessionToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPswd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strConfig" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSessionTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateSessionTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSessionToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIDOName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPropertyList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strOrderBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPostQueryMethod" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iRecordCap" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveDataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSessionToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updateDataSet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="refreshAfterSave" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCustomInsert" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCustomUpdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCustomDelete" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveDataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveDataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSessionToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIDOName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMethodName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMethodParameters" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CallMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CallMethodResult" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMethodParameters" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadJson">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSessionToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strIDOName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPropertyList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strOrderBy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPostQueryMethod" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iRecordCap" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadJsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadJsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveJson">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSessionToken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="updateJsonObject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCustomInsert" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCustomUpdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCustomDelete" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveJsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveJsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetConfigurationNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetConfigurationNames" />
+  </wsdl:message>
+  <wsdl:message name="GetConfigurationNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetConfigurationNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSessionTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSessionToken" />
+  </wsdl:message>
+  <wsdl:message name="CreateSessionTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSessionTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadDataSet" />
+  </wsdl:message>
+  <wsdl:message name="LoadDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveDataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveDataSet" />
+  </wsdl:message>
+  <wsdl:message name="SaveDataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="CallMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:CallMethod" />
+  </wsdl:message>
+  <wsdl:message name="CallMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:CallMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadJsonSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadJson" />
+  </wsdl:message>
+  <wsdl:message name="LoadJsonSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadJsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveJsonSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveJson" />
+  </wsdl:message>
+  <wsdl:message name="SaveJsonSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveJsonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDOWebServiceSoap">
+    <wsdl:operation name="GetConfigurationNames">
+      <wsdl:input message="tns:GetConfigurationNamesSoapIn" />
+      <wsdl:output message="tns:GetConfigurationNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSessionToken">
+      <wsdl:input message="tns:CreateSessionTokenSoapIn" />
+      <wsdl:output message="tns:CreateSessionTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadDataSet">
+      <wsdl:input message="tns:LoadDataSetSoapIn" />
+      <wsdl:output message="tns:LoadDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDataSet">
+      <wsdl:input message="tns:SaveDataSetSoapIn" />
+      <wsdl:output message="tns:SaveDataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CallMethod">
+      <wsdl:input message="tns:CallMethodSoapIn" />
+      <wsdl:output message="tns:CallMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadJson">
+      <wsdl:input message="tns:LoadJsonSoapIn" />
+      <wsdl:output message="tns:LoadJsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveJson">
+      <wsdl:input message="tns:SaveJsonSoapIn" />
+      <wsdl:output message="tns:SaveJsonSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IDOWebServiceSoap" type="tns:IDOWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetConfigurationNames">
+      <soap:operation soapAction="http://frontstep.com/IDOWebService/GetConfigurationNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSessionToken">
+      <soap:operation soapAction="http://frontstep.com/IDOWebService/CreateSessionToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDataSet">
+      <soap:operation soapAction="http://frontstep.com/IDOWebService/LoadDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDataSet">
+      <soap:operation soapAction="http://frontstep.com/IDOWebService/SaveDataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallMethod">
+      <soap:operation soapAction="http://frontstep.com/IDOWebService/CallMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadJson">
+      <soap:operation soapAction="http://frontstep.com/IDOWebService/LoadJson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveJson">
+      <soap:operation soapAction="http://frontstep.com/IDOWebService/SaveJson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IDOWebServiceSoap12" type="tns:IDOWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetConfigurationNames">
+      <soap12:operation soapAction="http://frontstep.com/IDOWebService/GetConfigurationNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSessionToken">
+      <soap12:operation soapAction="http://frontstep.com/IDOWebService/CreateSessionToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadDataSet">
+      <soap12:operation soapAction="http://frontstep.com/IDOWebService/LoadDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDataSet">
+      <soap12:operation soapAction="http://frontstep.com/IDOWebService/SaveDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallMethod">
+      <soap12:operation soapAction="http://frontstep.com/IDOWebService/CallMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadJson">
+      <soap12:operation soapAction="http://frontstep.com/IDOWebService/LoadJson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveJson">
+      <soap12:operation soapAction="http://frontstep.com/IDOWebService/SaveJson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IDOWebService">
+    <wsdl:port name="IDOWebServiceSoap" binding="tns:IDOWebServiceSoap">
+      <soap:address location="http://amterp03/IDORequestService/IDOWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IDOWebServiceSoap12" binding="tns:IDOWebServiceSoap12">
+      <soap12:address location="http://amterp03/IDORequestService/IDOWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://amterp03/IDORequestService/IDOWebService.asmx?wsdl" docRef="http://amterp03/IDORequestService/IDOWebService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://amterp03/IDORequestService/IDOWebService.asmx" xmlns:q1="http://frontstep.com/IDOWebService" binding="q1:IDOWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://amterp03/IDORequestService/IDOWebService.asmx" xmlns:q2="http://frontstep.com/IDOWebService" binding="q2:IDOWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

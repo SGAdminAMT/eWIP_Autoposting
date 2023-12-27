@@ -1,0 +1,6 @@
+C:\Users\PCAdmin\Documents\Visual Studio 2017\Projects\AutoPosting\AutoPosting\bin\Release\AutoPosting.exe.config
+C:\Users\PCAdmin\Documents\Visual Studio 2017\Projects\AutoPosting\AutoPosting\bin\Release\AutoPosting.exe
+C:\Users\PCAdmin\Documents\Visual Studio 2017\Projects\AutoPosting\AutoPosting\bin\Release\AutoPosting.pdb
+C:\Users\PCAdmin\Documents\Visual Studio 2017\Projects\AutoPosting\AutoPosting\obj\Release\AutoPosting.exe
+C:\Users\PCAdmin\Documents\Visual Studio 2017\Projects\AutoPosting\AutoPosting\obj\Release\AutoPosting.pdb
+C:\Users\PCAdmin\Documents\Visual Studio 2017\Projects\AutoPosting\AutoPosting\obj\Release\AutoPosting.csprojResolveAssemblyReference.cache
